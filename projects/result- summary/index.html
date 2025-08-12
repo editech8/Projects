@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Summary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="final-result">
+        <p class="your-result">Your Result</p>
+        <div class="score">
+          <p class="obtained js-obtained-marks">0</p>
+          <p class="out-of">of 100</p>
+        </div>
+        <p class="js-how-was-score how-is-score">Wecome</p>
+        <p class="js-compair-score compair-score">
+          You scored higher than 0% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="marks">
+        <p class="summary">Summary</p>
+        <div class="marks-for-each-catagory-one">
+          <div class="catagory-reaction catagory">
+            <img src="svgs/icon-reaction.svg" width="16px" class="svgs" />
+            <p class="reaction catagory-name">Reaction</p>
+            <input type="number" min="0" max="100" class="input js-input-reaction"
+            oninput="if (this.value > 100) this.value = 100; if (this.value < 0) this.value = 0">
+            <p class="hundred">/ 100</p>
+          </div>
+          <div class="catagory-memory catagory">
+            <img src="svgs/icon-memory.svg" width="16px" class="svgs" />
+            <p class="memory catagory-name">memory</p>
+             <input type="number" min="0" max="100" class="input js-input-memory"
+             oninput="if (this.value > 100) this.value = 100; if (this.value < 0) this.value = 0">
+            <p class="hundred">/ 100</p>
+          </div>
+          <div class="catagory-verbal catagory">
+            <img src="svgs/icon-verbal.svg" width="16px" class="svgs" />
+            <p class="verbal catagory-name">verbal</p>
+             <input type="number" min="0" max="100" class="input js-input-verbal"
+             oninput="if (this.value > 100) this.value = 100; if (this.value < 0) this.value = 0">
+            <p class="hundred">/ 100</p>
+          </div>
+          <div class="catagory-visual catagory">
+            <img src="svgs/icon-visual.svg" width="16px" class="svgs">
+            <p class="visual catagory-name">visual</p>
+             <input type="number" min="0" max="100" class="input js-input-visual"
+              oninput="if (this.value > 100) this.value = 100; if (this.value < 0) this.value = 0">
+            <p class="hundred">/ 100</p>
+          </div>
+        </div>
+        <button class="continue" onclick="calculate();">Continue</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
